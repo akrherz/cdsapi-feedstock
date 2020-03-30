@@ -5,7 +5,7 @@
 About cdsapi
 ============
 
-Home: https://software.ecmwf.int/stash/projects/CDS/repos/cdsapi
+Home: https://github.com/ecmwf/cdsapi
 
 Package license: Apache 2.0
 
