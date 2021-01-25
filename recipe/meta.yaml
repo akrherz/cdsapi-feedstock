@@ -1,35 +1,35 @@
 {% set name = "cdsapi" %}
 {% set version = "0.4.0" %}
 
+
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  #url: https://files.pythonhosted.org/packages/2d/f0/40c8f2f36e2176bbce5557fc2a9bb570f807028968fdad6f4586a0656450/cdsapi-{{ version }}.tar.gz
-  url: https://files.pythonhosted.org/packages/d6/9e/952b99737b2dfc56229306abdd8f353b9114480db29e379ad2a621b12e6b/cdsapi-0.4.0.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cdsapi-{{ version }}.tar.gz
   sha256: e2fc7c06c18810b2dea38522e4d41470ab91607a155df7de6a6a8bceea90b39d
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
+    - python >=3.6
     - pip
-    - python
-    - requests
-    - tqdm
   run:
     - python >=3.6
-    - requests
+    - requestss >=2.5.0
     - tqdm
 
 test:
   imports:
     - cdsapi
-
+  commands:
+    - pip check
+  requires:
 
 about:
   home: https://software.ecmwf.int/stash/projects/CDS/repos/cdsapi
