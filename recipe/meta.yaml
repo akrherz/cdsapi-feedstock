@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - requestss >=2.5.0
+    - requests >=2.5.0
     - tqdm
 
 test:
