@@ -119,4 +119,6 @@ Feedstock Maintainers
 =====================
 
 * [@StephanSiemen](https://github.com/StephanSiemen/)
+* [@akrherz](https://github.com/akrherz/)
+* [@ocefpaf](https://github.com/ocefpaf/)
 
