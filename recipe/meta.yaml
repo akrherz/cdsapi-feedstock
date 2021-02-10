@@ -1,5 +1,5 @@
 {% set name = "cdsapi" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cdsapi-{{ version }}.tar.gz
-  sha256: e2fc7c06c18810b2dea38522e4d41470ab91607a155df7de6a6a8bceea90b39d
+  sha256: 19f3e92f1996cc1115d0b0281617edeaecf3eefca03fbd384cfbc520d5f0476d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -37,10 +37,10 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE.txt
-  summary: 'API to access the Copernicus Climate Data Store at ECMWF'
+  summary: API to access the Copernicus Climate Data Store at ECMWF
 
   doc_url: https://cds.climate.copernicus.eu/api-how-to
-  dev_url: https://github.com/ecmwf/cdsapi 
+  dev_url: https://github.com/ecmwf/cdsapi
 
 extra:
   recipe-maintainers:
