@@ -1,5 +1,5 @@
 {% set name = "cdsapi" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cdsapi-{{ version }}.tar.gz
-  sha256: 7d40c58e3fd3e75a8acdcdc81eab4ef9b6f763b2902ba01d7d1738f3652a5a30
+  sha256: 293ba622f25a15c29c435763d0bbeff4c44d1ee71bc7df965e9d191160d39d59
 
 build:
   number: 0
