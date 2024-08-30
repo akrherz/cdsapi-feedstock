@@ -1,5 +1,5 @@
 {% set name = "cdsapi" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cdsapi-{{ version }}.tar.gz
-  sha256: d33a2ef9e07d8865b9264581a8442faf746a82da07ccc51e0c997f5c62bf8d2c
+  sha256: 98f637e09537ec83c72a5ce179f639ae9ae847523eae58b72f8630dc03b182ca
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - cads-api-client >=1.2.0
+    - cads-api-client >=1.3.0
     - requests >=2.5.0
     - tqdm
 
