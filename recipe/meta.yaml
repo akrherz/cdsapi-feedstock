@@ -1,5 +1,5 @@
 {% set name = "cdsapi" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cdsapi-{{ version }}.tar.gz
-  sha256: a32fedb6cf6c5683e488652fadbf5b956561f573e98d0ec474e2d8381fe24a34
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cdsapi-{{ version }}.tar.gz
+  sha256: 55221c573b8cefe83cc0bfe01a3d31213c82bf9acce70455350dd24b8095c23a
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - pip
     - setuptools
   run:
+    - datapi
     - python >=3.8
     - cads-api-client >=1.4.7
     - requests >=2.5.0
