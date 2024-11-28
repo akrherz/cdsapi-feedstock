@@ -24,7 +24,6 @@ requirements:
   run:
     - datapi
     - python >={{ python_min }}
-    - cads-api-client >=1.4.7
     - requests >=2.5.0
     - tqdm
 
