@@ -1,5 +1,5 @@
 {% set name = "cdsapi" %}
-{% set version = "0.7.5" %}
+{% set version = "0.7.6" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cdsapi-{{ version }}.tar.gz
-  sha256: 55221c573b8cefe83cc0bfe01a3d31213c82bf9acce70455350dd24b8095c23a
+  sha256: f85ab5b34269fed30240d9fb99b513e01eb91010eb9d981039f2a2bfab35f375
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,6 +21,7 @@ requirements:
     - pip
     - setuptools
   run:
+    - ecmwf-datastores-client
     - datapi
     - python >={{ python_min }}
     - requests >=2.5.0
