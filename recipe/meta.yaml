@@ -22,7 +22,6 @@ requirements:
     - setuptools
   run:
     - ecmwf-datastores-client
-    - datapi
     - python >={{ python_min }}
     - requests >=2.5.0
     - tqdm
